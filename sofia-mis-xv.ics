@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bloomdate//Mis XV Sofia//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sofia-mis-xv-20261205@bloomdate
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261205T213000
+DTEND;TZID=America/Argentina/Buenos_Aires:20261206T050000
+SUMMARY:Mis XV de Sofía
+LOCATION:Baco Eventos\, Nogoyá\, Entre Ríos
+GEO:-32.4305573;-59.8339424
+DESCRIPTION:Celebración de los XV de Sofía. Ubicación: https://www.google.com/maps/search/?api=1&query=-32.4305573,-59.8339424
+END:VEVENT
+END:VCALENDAR

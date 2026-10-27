@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#d5a29b" />
+    <title>Mis XV · Sofía</title>
+    <meta
+      name="description"
+      content="Con muchísima alegría, Sofía quiere compartir con vos una noche muy especial. Te espera para celebrar sus XV el 5 de diciembre de 2026."
+    />
+    <link rel="canonical" href="https://bloomdate-sofia15.netlify.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Mis XV · Sofía" />
+    <meta property="og:title" content="Mis XV · Sofía" />
+    <meta
+      property="og:description"
+      content="Con muchísima alegría, Sofía quiere compartir con vos una noche muy especial 💕 Te espera para celebrar sus XV el 5 de diciembre de 2026."
+    />
+    <meta property="og:url" content="https://bloomdate-sofia15.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://bloomdate-sofia15.netlify.app/assets/whatsapp-sofia.jpg"
+    />
+    <meta property="og:image:secure_url" content="https://bloomdate-sofia15.netlify.app/assets/whatsapp-sofia.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Invitación a los XV de Sofía, 5 de diciembre de 2026" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mis XV · Sofía" />
+    <meta
+      name="twitter:description"
+      content="Con muchísima alegría, Sofía quiere compartir con vos una noche muy especial 💕 Te espera para celebrar sus XV el 5 de diciembre de 2026."
+    />
+    <meta name="twitter:image" content="https://bloomdate-sofia15.netlify.app/assets/whatsapp-sofia.jpg" />
+    <link rel="preload" as="image" href="assets/intro-zoe/butterfly-main.png" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/portada-sofia.png" />
+    <link rel="preload" as="audio" href="assets/musica-justin.mp3?v=3" type="audio/mpeg" />
+    <link rel="stylesheet" href="styles.css?v=24" />
+  </head>
+  <body class="intro-is-open">
+    <div class="invitation-intro" role="dialog" aria-modal="true" aria-label="Bienvenida a los XV de Sofía">
+      <img class="invitation-intro__wash" src="assets/intro-zoe/welcome-floral-bg.png" alt="" aria-hidden="true" />
+      <img class="invitation-intro__edge invitation-intro__edge--one" src="assets/intro-zoe/butterfly-flight-02.png" alt="" aria-hidden="true" />
+      <img class="invitation-intro__edge invitation-intro__edge--two" src="assets/intro-zoe/butterfly-flight-03.png" alt="" aria-hidden="true" />
+      <div class="invitation-intro__content">
+        <img class="invitation-intro__main-butterfly" src="assets/intro-zoe/butterfly-main.png" alt="" aria-hidden="true" />
+        <h1>Sofía</h1>
+        <p class="invitation-intro__subtitle">MIS XV</p>
+        <p class="invitation-intro__phrase">ESTÁS POR ENTRAR A MI NOCHE</p>
+        <div class="invitation-intro__actions">
+          <button id="zoeIntroWithMusic" type="button">ENTRAR CON MÚSICA <span aria-hidden="true">♪</span></button>
+          <button id="zoeIntroWithoutMusic" type="button">ENTRAR SIN MÚSICA</button>
+        </div>
+      </div>
+      <div class="invitation-intro__flock" aria-hidden="true"></div>
+    </div>
+    <main class="invitation" id="invitationMain" tabindex="-1" aria-label="Invitación a los quince años de Sofía">
+      <section class="cover">
+        <img
+          class="cover__image"
+          src="assets/portada-sofia.png"
+          alt="Mis XV Sofía, con flores sobre fondo rosa"
+        />
+        <div class="cover__name-lights" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </section>
+      <div class="section-bridge" aria-hidden="true">
+        <span class="section-bridge__petal section-bridge__petal--one"></span>
+        <span class="section-bridge__petal section-bridge__petal--two"></span>
+        <span class="section-bridge__petal section-bridge__petal--three"></span>
+        <span class="section-bridge__butterfly">୨୧</span>
+      </div>
+      <section class="countdown" aria-label="Cuenta regresiva para los quince años de Sofía">
+        <img
+          class="countdown__background"
+          src="assets/countdown-florencia-final-v3.png"
+          alt="Cada vez falta menos para los XV de Sofía"
+        />
+        <div class="countdown__butterflies" id="countdownButterflies" aria-hidden="true"></div>
+        <div class="countdown__values" aria-live="off">
+          <span id="days">00</span>
+          <span id="hours">00</span>
+          <span id="minutes">00</span>
+          <span id="seconds">00</span>
+        </div>
+      </section>
+      <div class="section-bridge section-bridge--reverse" aria-hidden="true">
+        <span class="section-bridge__petal section-bridge__petal--one"></span>
+        <span class="section-bridge__petal section-bridge__petal--two"></span>
+        <span class="section-bridge__petal section-bridge__petal--three"></span>
+        <span class="section-bridge__butterfly">୨୧</span>
+      </div>
+      <section class="message-section" aria-label="Mensaje de Sofía">
+        <img
+          class="message-section__image"
+          src="assets/mensaje-sofia.png?v=2"
+          alt="Hay momentos que se sueñan durante mucho tiempo. El mío está por comenzar y quiero compartirlo con vos."
+        />
+        <p class="message-section__name">Sofía</p>
+      </section>
+      <div class="section-bridge section-bridge--date" aria-hidden="true">
+        <span class="section-bridge__petal section-bridge__petal--one"></span>
+        <span class="section-bridge__petal section-bridge__petal--two"></span>
+        <span class="section-bridge__petal section-bridge__petal--three"></span>
+      </div>
+      <section class="date-section" aria-label="Fecha de los quince años de Sofía">
+        <img
+          class="date-section__image"
+          src="assets/fecha-sofia.png"
+          alt="Sábado 5 de diciembre de 2026 a las 21:30 horas"
+        />
+        <div class="date-section__lights" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <a
+          class="date-section__calendar-link"
+          href="sofia-mis-xv.ics"
+          download="Sofia-Mis-XV.ics"
+          aria-label="Agregar los quince años de Sofía al calendario"
+        ></a>
+      </section>
+      <section class="location-section" aria-label="Ubicación del salón">
+        <img
+          class="location-section__image"
+          src="assets/ubicacion-sofia.png"
+          alt="Cómo llegar a Baco Eventos, Nogoyá, Entre Ríos"
+        />
+        <button
+          class="location-section__open"
+          id="openLocation"
+          type="button"
+          aria-label="Ver opciones para llegar a Baco Eventos"
+        ></button>
+      </section>
+      <section class="dress-code-section" aria-label="Código de vestimenta">
+        <img
+          class="dress-code-section__image"
+          src="assets/dress-code-belen-v2.png"
+          alt="Dress code elegante sport"
+        />
+      </section>
+      <section class="bloomkeep-section" aria-label="BloomKeep, la red social privada de los XV de Sofía">
+        <img
+          class="bloomkeep-section__image"
+          src="assets/bloomkeep-sofia.png"
+          alt="Descubrí BloomKeep, la red social privada de los XV de Sofía"
+        />
+        <a
+          class="bloomkeep-section__open"
+          href="https://app.bloomkeep.site/sofi-xv"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Ingresar a BloomKeep de los XV de Sofía"
+        ></a>
+      </section>
+      <section class="gifts-section" aria-label="Regalos">
+        <img
+          class="gifts-section__image"
+          src="assets/regalos-florencia-boton-calendario.png"
+          alt="Regalos. Lo más lindo es compartir este momento con vos. Si además querés hacerme un regalo, podés hacerlo desde acá."
+        />
+        <button class="gifts-section__open" id="openGifts" type="button" aria-label="Ver datos para regalos"></button>
+      </section>
+      <section class="music-section" aria-label="Sugerencias de música">
+        <img
+          class="music-section__base"
+          src="assets/musica-sofia-base.png"
+          alt="Música. Sumá esa canción que no puede faltar y ayudame a crear la playlist de esta noche."
+        />
+        <div class="music-section__grooves" aria-hidden="true"></div>
+        <img
+          class="music-section__record-label"
+          src="assets/musica-sofia-disco.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="music-section__needle"
+          src="assets/musica-florencia.png"
+          alt=""
+          aria-hidden="true"
+          hidden
+        />
+        <a
+          class="music-section__add"
+          href="https://open.spotify.com/playlist/1VbTfkvlivGj4ZJQydozV9"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir la playlist de Sofía en Spotify para sumar una canción"
+        ></a>
+      </section>
+      <section class="rsvp-section" aria-label="Confirmación de asistencia">
+        <img
+          class="rsvp-section__image"
+          src="assets/rsvp-sofia.png"
+          alt="¿Venís? Confirmá tu asistencia antes del 18 de noviembre"
+        />
+        <div class="rsvp-section__guests">
+          <p class="rsvp-section__guest-names" id="nombres-invitados"></p>
+          <p class="rsvp-section__guest-places" id="cantidad-lugares"></p>
+        </div>
+        <a
+          class="rsvp-section__link"
+          id="boton-confirmar"
+          href="https://bloomdate-rsvp.netlify.app/r/cumple-xv-sofia"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Confirmar asistencia a los quince años de Sofía"
+        ></a>
+      </section>
+      <footer class="invitation-footer">
+        <p class="invitation-footer__signature">
+          Hecho con amor <span aria-hidden="true">♥</span> por <strong>Bloomdate</strong>
+        </p>
+        <nav class="invitation-footer__social" aria-label="Contacto de Bloomdate">
+          <a
+            href="https://wa.me/541140436324"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contactar a Bloomdate por WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a12 12 0 0 0 5.6 1.4c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.2-3.4-8.4Zm-8.4 18.2c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.5 4.7Zm5.4-7.3c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6.3-.6c.1-.2 0-.5 0-.6l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.1.3 2.4 3.8 6 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></svg>
+          </a>
+          <a
+            href="https://www.instagram.com/bloomdate.invitaciones/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ver Bloomdate Invitaciones en Instagram"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.5 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+          </a>
+          <a
+            href="https://bloomdate-site.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visitar el sitio web de Bloomdate"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v2h18V6a1 1 0 0 0-1-1H4Zm-1 5v8a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-8H3Zm2-4h2v1H5V6Zm3 0h2v1H8V6Z"/></svg>
+          </a>
+        </nav>
+      </footer>
+    </main>
+
+    <dialog class="location-dialog" id="locationDialog" aria-label="Cómo llegar a Baco Eventos">
+      <div class="location-dialog__canvas">
+        <img
+          class="location-dialog__image"
+          src="assets/ubicacion-modal-sofia.png"
+          alt="Opciones para abrir la ubicación en Google Maps o Waze y copiar la dirección"
+        />
+        <button class="location-dialog__close" id="closeLocation" type="button" aria-label="Cerrar"></button>
+        <a
+          class="location-dialog__action location-dialog__action--maps"
+          href="https://www.google.com/maps/search/?api=1&amp;query=-32.4305573%2C-59.8339424"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir Baco Eventos en Google Maps"
+        ></a>
+        <a
+          class="location-dialog__action location-dialog__action--waze"
+          href="https://www.waze.com/ul?ll=-32.4305573%2C-59.8339424&amp;navigate=yes"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir Baco Eventos en Waze"
+        ></a>
+        <button
+          class="location-dialog__action location-dialog__action--copy"
+          id="copyAddress"
+          type="button"
+          aria-label="Copiar dirección"
+        ></button>
+        <p class="location-dialog__status" id="copyStatus" role="status"></p>
+      </div>
+    </dialog>
+
+    <dialog class="gift-dialog" id="giftDialog" aria-label="Datos para regalos de Sofía">
+      <div class="gift-dialog__canvas">
+        <img
+          class="gift-dialog__image"
+          src="assets/modal-regalos-sofia.png"
+          alt="Titular Maria Eugenia Maggioni, CUIL 23362600154, cuenta CA $ 25603797236348, alias CATRE.MANERA.PARQUE, CBU 0110379130037972363483"
+        />
+        <button class="gift-dialog__close" id="closeGifts" type="button" aria-label="Cerrar"></button>
+        <button class="gift-dialog__copy" id="copyAlias" type="button" aria-label="Copiar alias CATRE.MANERA.PARQUE"></button>
+        <button class="gift-dialog__copy gift-dialog__copy--cbu" id="copyCbu" type="button" aria-label="Copiar CBU 0110379130037972363483"></button>
+        <p class="gift-dialog__status" id="aliasStatus" role="status"></p>
+      </div>
+    </dialog>
+    <button
+      class="audio-flower"
+      id="audioFlower"
+      type="button"
+      aria-label="Reproducir música"
+      aria-pressed="false"
+    >
+      <img src="assets/flor-musica.png" alt="" aria-hidden="true" />
+      <span class="audio-flower__center" aria-hidden="true">
+        <span class="audio-flower__icon"></span>
+      </span>
+    </button>
+    <audio id="invitationAudio" src="assets/musica-justin.mp3?v=3" loop preload="metadata"></audio>
+    <script src="script.js?v=15"></script>
+    <script src="invitation-personalization.js?v=1"></script>
+  </body>
+</html>

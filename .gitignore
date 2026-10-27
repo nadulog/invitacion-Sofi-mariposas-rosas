@@ -1,0 +1,29 @@
+.agents/
+tools/
+
+# Se publican solamente los recursos usados por la invitación.
+assets/*
+!assets/fonts/
+!assets/fonts/**
+!assets/intro-zoe/
+!assets/intro-zoe/**
+!assets/bloomkeep-sofia.png
+!assets/countdown-florencia-final-v3.png
+!assets/dress-code-belen-v2.png
+!assets/fecha-sofia.png
+!assets/flor-musica.png
+!assets/mensaje-sofia.png
+!assets/modal-regalos-sofia.png
+!assets/musica-florencia.png
+!assets/musica-justin.mp3
+!assets/musica-sofia-base.png
+!assets/musica-sofia-disco.png
+!assets/portada-sofia.png
+!assets/regalos-florencia-boton-calendario.png
+!assets/rsvp-sofia.png
+!assets/ubicacion-modal-sofia.png
+!assets/ubicacion-sofia.png
+!assets/whatsapp-sofia.jpg
+
+# Local Netlify folder
+.netlify
