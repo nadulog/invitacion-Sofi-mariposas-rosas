@@ -8,7 +8,6 @@ const publicFiles = new Set([
   "styles.css",
   "script.js",
   "invitation-personalization.js",
-  "debug-invitados.js",
   "sofia-mis-xv.ics",
   "assets/bloomkeep-sofia.png",
   "assets/countdown-florencia-final-v3.png",

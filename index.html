@@ -71,6 +71,15 @@
           <span></span><span></span><span></span><span></span>
         </div>
       </section>
+      <section class="guests-section" id="seccion-invitados" aria-label="Invitados" hidden>
+        <img class="guests-section__image" src="assets/invitados-sofia.jpg" alt="" aria-hidden="true" />
+        <div class="guests-section__card">
+          <p class="guests-section__eyebrow">Esta invitación es para</p>
+          <p class="guests-section__names" id="nombres-invitados"></p>
+          <span class="guests-section__divider" aria-hidden="true">♡</span>
+          <p class="guests-section__places" id="cantidad-lugares"></p>
+        </div>
+      </section>
       <div class="section-bridge" aria-hidden="true">
         <span class="section-bridge__petal section-bridge__petal--one"></span>
         <span class="section-bridge__petal section-bridge__petal--two"></span>
@@ -197,15 +206,6 @@
           aria-label="Abrir la playlist de Sofía en Spotify para sumar una canción"
         ></a>
       </section>
-      <section class="guests-section" id="seccion-invitados" aria-label="Invitados" hidden>
-        <img class="guests-section__image" src="assets/invitados-sofia.jpg" alt="" aria-hidden="true" />
-        <div class="guests-section__card">
-          <p class="guests-section__eyebrow">Esta invitación es para</p>
-          <p class="guests-section__names" id="nombres-invitados"></p>
-          <span class="guests-section__divider" aria-hidden="true">♡</span>
-          <p class="guests-section__places" id="cantidad-lugares"></p>
-        </div>
-      </section>
       <section class="rsvp-section" aria-label="Confirmación de asistencia">
         <img
           class="rsvp-section__image"
@@ -314,6 +314,5 @@
     <audio id="invitationAudio" src="assets/musica-justin.mp3?v=3" loop preload="metadata"></audio>
     <script src="script.js?v=15"></script>
     <script src="invitation-personalization.js?v=2"></script>
-    <script src="debug-invitados.js?v=1"></script>
   </body>
 </html>
