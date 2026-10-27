@@ -513,6 +513,7 @@ body.intro-locked {
 .dress-code-section,
 .gifts-section,
 .music-section,
+.guests-section,
 .rsvp-section {
   position: relative;
   z-index: 1;
@@ -553,40 +554,86 @@ body.intro-locked {
   height: auto;
 }
 
-.rsvp-section__guests {
-  position: absolute;
-  top: 5%;
-  left: 8%;
-  width: 84%;
-  z-index: 2;
-  text-align: center;
-  color: #6b4744;
-  pointer-events: none;
+.guests-section {
+  width: 100%;
+  overflow: hidden;
+  background: #e2bfb5;
   container-type: inline-size;
 }
 
-.rsvp-section__guest-names,
-.rsvp-section__guest-places {
-  margin: 0;
-}
-
-.rsvp-section__guest-names:empty,
-.rsvp-section__guest-places:empty {
+.guests-section[hidden] {
   display: none;
 }
 
-.rsvp-section__guest-names {
-  font-family: "Julia Script", cursive;
-  font-size: 11cqw;
-  line-height: 1.05;
-  text-wrap: balance;
+.guests-section__image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.rsvp-section__guest-places {
-  margin-top: 3cqw;
-  font: 400 5cqw/1.3 Georgia, "Times New Roman", serif;
+/* Zona libre de la tarjeta de papel (imagen 933 x 1250). */
+.guests-section__card {
+  position: absolute;
+  top: 27%;
+  left: 12%;
+  width: 76%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #a77d3f;
+}
+
+.guests-section__card p {
+  margin: 0;
+}
+
+.guests-section__eyebrow {
+  font: 400 3.4vw/1.3 Georgia, "Times New Roman", serif;
+  font: 400 3.4cqw/1.3 Georgia, "Times New Roman", serif;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+.guests-section__card .guests-section__names {
+  margin-top: 5cqw;
+  font-family: "Julia Script", cursive;
+  font-size: 11vw;
+  font-size: 11cqw;
+  line-height: 1.1;
+  text-wrap: balance;
+  color: #9a6d32;
+  text-shadow: 0 1px 0 rgb(255 250 235 / 80%), 0 2px 3px rgb(120 80 30 / 22%);
+}
+
+.guests-section__divider {
+  display: flex;
+  align-items: center;
+  gap: 3cqw;
+  width: 62%;
+  margin: 4cqw 0;
+  font-size: 4.2vw;
+  font-size: 4.2cqw;
+  line-height: 1;
+}
+
+.guests-section__divider::before,
+.guests-section__divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.guests-section__places {
+  font: 400 4.6vw/1.3 Georgia, "Times New Roman", serif;
+  font: 400 4.6cqw/1.3 Georgia, "Times New Roman", serif;
   font-variant-numeric: lining-nums;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  color: #7a5a3a;
 }
 
 .rsvp-section__link {

@@ -13,6 +13,7 @@ const publicFiles = new Set([
   "assets/countdown-florencia-final-v3.png",
   "assets/dress-code-belen-v2.png",
   "assets/fecha-sofia.png",
+  "assets/invitados-sofia.jpg",
   "assets/flor-musica.png",
   "assets/mensaje-sofia.png",
   "assets/modal-regalos-sofia.png",

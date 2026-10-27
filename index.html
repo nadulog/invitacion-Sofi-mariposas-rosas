@@ -40,7 +40,7 @@
     <link rel="preload" as="image" href="assets/intro-zoe/butterfly-main.png" fetchpriority="high" />
     <link rel="preload" as="image" href="assets/portada-sofia.png" />
     <link rel="preload" as="audio" href="assets/musica-justin.mp3?v=3" type="audio/mpeg" />
-    <link rel="stylesheet" href="styles.css?v=24" />
+    <link rel="stylesheet" href="styles.css?v=25" />
   </head>
   <body class="intro-is-open">
     <div class="invitation-intro" role="dialog" aria-modal="true" aria-label="Bienvenida a los XV de Sofía">
@@ -197,16 +197,21 @@
           aria-label="Abrir la playlist de Sofía en Spotify para sumar una canción"
         ></a>
       </section>
+      <section class="guests-section" id="seccion-invitados" aria-label="Invitados" hidden>
+        <img class="guests-section__image" src="assets/invitados-sofia.jpg" alt="" aria-hidden="true" />
+        <div class="guests-section__card">
+          <p class="guests-section__eyebrow">Esta invitación es para</p>
+          <p class="guests-section__names" id="nombres-invitados"></p>
+          <span class="guests-section__divider" aria-hidden="true">♡</span>
+          <p class="guests-section__places" id="cantidad-lugares"></p>
+        </div>
+      </section>
       <section class="rsvp-section" aria-label="Confirmación de asistencia">
         <img
           class="rsvp-section__image"
           src="assets/rsvp-sofia.png"
           alt="¿Venís? Confirmá tu asistencia antes del 18 de noviembre"
         />
-        <div class="rsvp-section__guests">
-          <p class="rsvp-section__guest-names" id="nombres-invitados"></p>
-          <p class="rsvp-section__guest-places" id="cantidad-lugares"></p>
-        </div>
         <a
           class="rsvp-section__link"
           id="boton-confirmar"
@@ -308,6 +313,6 @@
     </button>
     <audio id="invitationAudio" src="assets/musica-justin.mp3?v=3" loop preload="metadata"></audio>
     <script src="script.js?v=15"></script>
-    <script src="invitation-personalization.js?v=1"></script>
+    <script src="invitation-personalization.js?v=2"></script>
   </body>
 </html>

@@ -47,6 +47,9 @@
       if (confirmBtn && invite.event_slug) {
         confirmBtn.href = RSVP_BASE + "/r/" + encodeURIComponent(invite.event_slug) + "?invite=" + encodeURIComponent(token);
       }
+
+      var guestsSection = document.getElementById("seccion-invitados");
+      if (guestsSection) guestsSection.hidden = false;
     } catch (_error) {
       return;
     }
