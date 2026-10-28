@@ -1122,6 +1122,20 @@ body.intro-is-open .audio-flower {
   height: auto;
 }
 
+.dress-code-section__note {
+  position: absolute;
+  z-index: 2;
+  top: 64%;
+  left: 20%;
+  width: 60%;
+  margin: 0;
+  color: #875a55;
+  font: 400 clamp(14px, 3.6vw, 34px)/1.5 Georgia, "Times New Roman", serif;
+  letter-spacing: 0.08em;
+  text-align: center;
+  pointer-events: none;
+}
+
 .bloomkeep-section {
   position: relative;
   z-index: 1;
