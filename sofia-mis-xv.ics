@@ -6,7 +6,7 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:sofia-mis-xv-20261205@bloomdate
 DTSTAMP:20261027T120000Z
-DTSTART;TZID=America/Argentina/Buenos_Aires:20261205T213000
+DTSTART;TZID=America/Argentina/Buenos_Aires:20261205T210000
 DTEND;TZID=America/Argentina/Buenos_Aires:20261206T050000
 SUMMARY:Mis XV de Sofía
 LOCATION:Baco Eventos\, Nogoyá\, Entre Ríos

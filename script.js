@@ -1,4 +1,4 @@
-const eventDate = new Date("2026-12-05T21:30:00-03:00");
+const eventDate = new Date("2026-12-05T21:00:00-03:00");
 
 const fields = {
   days: document.querySelector("#days"),
